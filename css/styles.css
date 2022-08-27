@@ -1,0 +1,129 @@
+@import url(./buttons.css);
+
+body {
+    background:linear-gradient(30deg, #313232,#434343, #615e5c, #897f81, #beb2b0);
+    height: 38rem;
+    background-image:url(../images/background.webp);
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.wrapper{
+    max-inline-size: 56.25rem;
+    margin: auto;
+}
+
+.player{
+    margin-block-start: 6.25rem;
+    position: relative;
+}
+
+.player video{
+    inline-size: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    vertical-align: middle;
+    box-shadow: inset 0rem 0.2rem 1.7rem #F70800, 0rem 0rem 0.9rem #F70800,
+    0.7rem 0 1rem #F70800, 0 0 3.1rem #EB0800, 0 0 4.2rem #EB0800;
+}
+
+.player-title{
+    color: black;
+    position: absolute; 
+    margin: 0.7rem;
+    inset-block-start: 0; 
+    inset-inline-start: 0.3rem; 
+}
+
+.player-control{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+     
+}
+
+.fa-solid{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.player-progress{
+    position: absolute;
+    display: flex;
+    inset-block-end: 0;
+    inset-inline: 0;
+    padding: 0.6rem;
+}
+
+.progress-volume {
+    position: absolute;
+    display: flex;
+    inset-inline-end: 0;
+    
+    padding: 0.6rem;
+    transform: rotate(-90deg);
+}
+
+.player-progress input,
+.progress-volume input{
+    flex: 1;
+}
+
+#videoTimeLapse{
+    outline: none;
+    box-shadow: 0 0.06rem 0.6rem 0.06rem black;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#videoTimeLapse::-webkit-slider-thumb {
+    background-color: rgb(248, 1, 1);
+    width: 0.9rem;
+    height: 0.9rem;
+    border-radius: 50%;
+    border: solid #F70800;
+    margin-top: -0.5rem;  
+}
+
+#videoTimeLapse::-webkit-slider-runnable-track {
+    background: linear-gradient(90deg, rgb(214, 14, 14)50%, rgb(12, 1, 1)50%);
+    height: 0.1rem;
+} 
+
+#videoVolumenLapse::-webkit-slider-thumb {
+    background-color: red;
+    width: 0.4rem;
+    height: 1rem;
+    margin-top: -0.45rem;
+    border-radius: 50%; 
+  }
+
+#videoVolumenLapse::-webkit-slider-runnable-track {
+    background-color: black;
+    height: 0.1rem;
+} 
+
+
+
+.player-overlay{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: .4s opacity;
+}
+
+.player:hover .player-overlay{
+    opacity: 1;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Video player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">            
+            <video class="video" id="video" poster="./images/One piece.jpg" src="./videos/Ending memories.mp4">
+
+            </video>
+            <div class="player-overlay">
+                <h2 class="player-title"> Ending memories</h2>
+                <div class="player-control">
+                    <button class="button" id="backward" aria-label="Retroceder 10 seguundos" title="Retroceder 10 seguundos">
+                        <i class="fa-solid fa-arrow-rotate-left"></i> 
+                    </button>
+                    <button class="button" id="play" aria-label="Reproducir" title="Reproducir">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button class="button" id="pause" aria-label="Pausar" title="Pausar">
+                        <i class="fa-solid fa-pause"></i> 
+                    </button>
+                    <button class="button" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos">
+                        <i class="fa-solid fa-arrow-rotate-right"></i> 
+                    </button>
+                </div>
+                <div class="progress-volume">
+                    <input id="videoVolumenLapse" min="0" type="range" value="0">
+                </div>
+                <div class="player-progress">
+                    <input id="videoTimeLapse" min="0" type="range" value="0">
+                </div>
+                
+            </div>
+        </div>  
+    </div>
+        
+    <script src="./Javascript/indes.js">
+    </script>
+
+</body>
+</html>
