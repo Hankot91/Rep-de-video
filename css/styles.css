@@ -46,11 +46,6 @@ body {
      
 }
 
-.fa-solid{
-    font-size: 1.8rem;
-    color: black;
-}
-
 .player-progress{
     position: absolute;
     display: flex;
@@ -61,11 +56,12 @@ body {
 
 .progress-volume {
     position: absolute;
-    display: flex;
+    display: block;
     inset-inline-end: 0;
-    
     padding: 0.6rem;
     transform: rotate(-90deg);
+    bottom: 3.9rem;
+    right: -55px;
 }
 
 .player-progress input,

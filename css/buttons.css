@@ -2,12 +2,22 @@
 inline-size: 32px;
 block-size:  32px;
 border: none;
+background: 0;
 background-color: unset;
 background: repeat no-repeat;
 background-position: center;
 cursor: pointer;
 flex-grow: 0;
 
+}
+
+.fa-solid{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.fa-signal{
+    transform: rotateZ(90deg);
 }
 
 .button:active{
