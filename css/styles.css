@@ -48,30 +48,38 @@ body {
 
 .player-progress{
     position: absolute;
-    display: flex;
+    display: flex; 
     inset-block-end: 0;
-    inset-inline: 0;
-    padding: 0.6rem;
-}
-
-.progress-volume {
-    position: absolute;
-    display: block;
     inset-inline-end: 0;
-    padding: 0.6rem;
-    transform: rotate(-90deg);
-    bottom: 3.9rem;
-    right: -55px;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.player-progress input,
-.progress-volume input{
-    flex: 1;
+.progress-time{
+    width: 92%;
+}
+
+.botton-volume{
+    display: flex; 
+}
+
+#videoVolumenLapse{
+    width: 3rem;
+    transform: rotate(-90deg);
+    background: 0;
+    background-color: unset;
+    background: repeat no-repeat;
+    background-position: center;
 }
 
 #videoTimeLapse{
-    outline: none;
+    width: 100%;
     box-shadow: 0 0.06rem 0.6rem 0.06rem black;
+}
+
+.progress-time input,
+.progress-volume input{
+    flex: 1;
 }
 
 input[type='range'],
@@ -115,7 +123,7 @@ input[type='range']::-webkit-slider-thumb {
 .player-overlay{
     position: absolute;
     inset: 0;
-    opacity: 0;
+    opacity: 1;
     transition: .4s opacity;
 }
 

@@ -1,6 +1,6 @@
 .button{
-inline-size: 32px;
-block-size:  32px;
+inline-size: 2rem;
+block-size:  2rem;
 border: none;
 background: 0;
 background-color: unset;
@@ -11,13 +11,14 @@ flex-grow: 0;
 
 }
 
+
 .fa-solid{
     font-size: 1.8rem;
     color: black;
 }
 
 .fa-signal{
-    transform: rotateZ(90deg);
+   font-size: 1.2rem !important;
 }
 
 .button:active{
