@@ -32,7 +32,7 @@ function handleForward(){
    
 function hanldeTime(){
     $videoTimeLapse.value = $video.currentTime
-    $videoTimeLapse.style.setProperty("--value", videoTimeLapse.value * 100 / videoTimeLapse.max);
+    $videoTimeLapse.style.setProperty("--value", videoTimeLapse.value * 100 / videoTimeLapse.max)
 }
     
 function handleTimeVideo(){

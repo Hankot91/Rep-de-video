@@ -24,12 +24,12 @@ body {
     aspect-ratio: 16/9;
     object-fit: cover;
     vertical-align: middle;
-    box-shadow: inset 0rem 0.2rem 1.7rem #F70800, 0rem 0rem 0.9rem #F70800,
-    0.7rem 0 1rem #F70800, 0 0 3.1rem #EB0800, 0 0 4.2rem #EB0800;
+    box-shadow: inset 0rem 0.2rem 1.7rem #f0c507, 0rem 0rem 0.9rem #e0b807,
+    0.7rem 0 1rem #ffc341, 0 0 3.1rem #eb9900, 0 0 4.2rem #fd950d;
 }
 
 .player-title{
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute; 
     margin: 0.7rem;
     inset-block-start: 0; 
@@ -74,7 +74,7 @@ body {
 
 #videoTimeLapse{
     width: 100%;
-    box-shadow: 0 0.06rem 0.6rem 0.06rem black;
+    box-shadow: 0 0.06rem 0.6rem 0.06rem rgb(231, 230, 230);
 }
 
 .progress-time input,
@@ -92,21 +92,21 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 #videoTimeLapse::-webkit-slider-thumb {
-    background-color: rgb(248, 1, 1);
+    background-color: rgb(255, 149, 11);
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
-    border: solid #F70800;
+    border: solid #f75b00ab;
     margin-top: -0.5rem;  
 }
 
 #videoTimeLapse::-webkit-slider-runnable-track {
-    background: linear-gradient(to right, #ff0a0a  calc(var(--value)*1%), black 0);
+    background: linear-gradient(to right, rgb(255, 149, 11)  calc(var(--value)*1%), rgb(255, 255, 255) 0);
     height: 0.1rem;
 } 
 
 #videoVolumenLapse::-webkit-slider-thumb {
-    background-color: red;
+    background-color: rgb(255, 149, 11);
     width: 0.4rem;
     height: 1rem;
     margin-top: -0.45rem;
@@ -114,7 +114,7 @@ input[type='range']::-webkit-slider-thumb {
   }
 
 #videoVolumenLapse::-webkit-slider-runnable-track {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 0.1rem;
 } 
 
