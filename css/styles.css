@@ -101,7 +101,7 @@ input[type='range']::-webkit-slider-thumb {
 }
 
 #videoTimeLapse::-webkit-slider-runnable-track {
-    background: linear-gradient(90deg, rgb(214, 14, 14)50%, rgb(12, 1, 1)50%);
+    background: linear-gradient(to right, #ff0a0a  calc(var(--value)*1%), black 0);
     height: 0.1rem;
 } 
 

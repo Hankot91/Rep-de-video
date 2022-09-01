@@ -32,10 +32,12 @@ function handleForward(){
    
 function hanldeTime(){
     $videoTimeLapse.value = $video.currentTime
+    $videoTimeLapse.style.setProperty("--value", videoTimeLapse.value * 100 / videoTimeLapse.max);
 }
     
 function handleTimeVideo(){
     $video.currentTime = $videoTimeLapse.value
+    
 }
 
 function handleLoad(){
@@ -64,6 +66,9 @@ function handleVolumen(){
     var unidad = (inputMax - inputMin) / 100;
     input.style.setProperty("--value", (input.value - inputMin) / unidad);
 }
+
+
+
 
 $video.addEventListener('timeupdate', hanldeTime)
 $pause.addEventListener('click', handlePause)
